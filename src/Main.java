@@ -30,6 +30,24 @@ public class Main {
         Dom dom1 = new Dom();
         Budynek dom2 = new Dom();
 
+        dom1.kolorDomu(Budynek.KolorEnum.czerwony);
+        dom1.adresBudynku("Podolska 10");
+        dom1.liczbaMieszkancow(100);
+        dom1.liczbaOkien(1000);
+        dom1.powierzchnia(2000);
+        dom1.gestosctZaludnienia(2000,100);
+
+        dom2.kolorDomu(Budynek.KolorEnum.zielony);
+        dom2.adresBudynku("Morska 100");
+        dom2.liczbaMieszkancow(30);
+        dom2.liczbaOkien(29);
+        dom2.powierzchnia(199);
+        dom2.gestosctZaludnienia(199,30);
+
+        System.out.println(dom1.toString());
+        System.out.println(dom2.toString());
+
+
 
     }
 }

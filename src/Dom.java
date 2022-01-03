@@ -4,6 +4,7 @@ public class Dom implements Budynek{
     private String adres;
     private int value;
     private KolorEnum kolor;
+    private double gZ;
 
 
     @Override
@@ -38,7 +39,8 @@ public class Dom implements Budynek{
 
     @Override
     public double gestosctZaludnienia(double pow, int liczbaMieszkancow) {
-        return pow/liczbaMieszkancow;
+        this.gZ=liczbaMieszkancow/pow;
+        return gZ;
     }
 
     public double getPow() {
@@ -65,12 +67,15 @@ public class Dom implements Budynek{
         this.value = value;
     }
 
+
+
     @Override
     public String toString() {
         return "Dom{" +
-                "pow=" + pow +
+                "powierzchnia=" + pow +
                 ", adres='" + adres + '\'' +
-                ", value=" + value +
+                ", liczbaOkien=" + value +
+                ", gestosc zaludnienia=" + gZ +
                 '}';
     }
 

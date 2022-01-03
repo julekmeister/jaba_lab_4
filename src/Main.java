@@ -27,5 +27,9 @@ public class Main {
         b) wykorzystać wszystkie metody do implementacji pól
         c) wyświetlić w konsoli metodę toString (na obu objektach) opisującą zachowanie klasy Dom
         */
+        Dom dom1 = new Dom();
+        Budynek dom2 = new Dom();
+
+
     }
 }
